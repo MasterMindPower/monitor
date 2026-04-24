@@ -29,10 +29,10 @@ def main():
         print(log_entry)
         log_entries.append(log_entry)
         
-    # Append to log-url file
+    # Write to log-url file (overwriting previous data)
     log_file_path = "log-url"
     
-    with open(log_file_path, "a", encoding="utf-8") as f:
+    with open(log_file_path, "w", encoding="utf-8") as f:
         for entry in log_entries:
             f.write(entry + "\n")
 
