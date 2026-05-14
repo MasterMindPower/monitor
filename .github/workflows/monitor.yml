@@ -3,7 +3,7 @@ name: URL Monitor
 on:
   schedule:
     # Run every 6 hours (adjust as needed, e.g., '0 * * * *' for hourly)
-    - cron: '0 */6 * * *'
+    - cron: '0 */1 * * *'
   workflow_dispatch: # Allows you to manually trigger the workflow from the GitHub UI
 
 jobs:
